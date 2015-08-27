@@ -1,5 +1,5 @@
 /**
- * ngCopix - Programmatically cut and copy selected text to the users clipboard
+ * ngCopix - Programmatically cut and copy selected text to the users clipboard using AngularJS
  * @version 0.1.0 - built on 2015-08-27
  * @link https://github.com/peterbartha/ng-copix
  * @license MIT License, Copyright (c) 2015 Peter Bartha <mail@peterbartha.com>
