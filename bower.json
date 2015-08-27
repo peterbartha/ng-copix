@@ -1,7 +1,7 @@
 {
   "name": "ng-copix",
   "description": "Physics-like animations for pretty particles using AngularJS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/ngCopix.js",
   "dependencies": {
     "angular": ">=1.2.0",
