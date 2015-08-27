@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ngCopix sample</title>
+
+  <!-- Styles -->
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    textarea { margin-top: 50px; }
+  </style>
+
+  <!-- Scripts -->
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/zeroclipboard/dist/ZeroClipboard.js"></script>
+  <script src="../src/ngCopix.js"></script>
+</head>
+<body>
+
+<div ng-app="ngCopixExampleApp">
+  <div class="container" ng-controller="ngCopixAppController">
+    <div class="page-header">
+      <h1>ngCopix <small>example</small></h1>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="field1">Copy #1</label>
+        <input id="field1" type="text" class="form-control" placeholder="Enter text to copy" ng-model="field1">
+      </div>
+      <button class="btn btn-default" copix-range="field1" copix-fallback="fallback(copy)">Copy</button>
+
+      <textarea class="form-control" rows="3" placeholder="Paste copied text here"></textarea>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var app = angular.module('ngCopixExampleApp', ["ngCopixboard"]);
+  app.config(['ngCopixProvider', function(ngCopixProvider) {
+    ngCopixProvider.setZeroClipboardPath("../bower_components/zeroclipboard/dist/ZeroClipboard.swf");
+  }]);
+
+  app.controller('ngCopixAppController', function ($scope) {
+    $scope.fallback = function(copy) {
+      window.prompt('Press ctrl+c to copy the text below.', copy);
+    };
+  });
+</script>
+
+</body>
+</html>
