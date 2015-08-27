@@ -1,0 +1,26 @@
+{
+  "name": "ng-copix",
+  "version": "0.1.0",
+  "main": "src/ngCopix.js",
+  "dependencies": {
+    "angular": ">=1.2.0",
+    "zeroclipboard": "~2.2.0"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules"
+  ],
+  "keywords": [
+    "exec",
+    "execcommand",
+    "flash",
+    "clipboard",
+    "copy",
+    "cut",
+    "paste",
+    "zclip",
+    "clip"
+  ]
+}
