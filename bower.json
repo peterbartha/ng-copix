@@ -12,6 +12,9 @@
     "bower_components",
     "node_modules"
   ],
+  "authors": [
+    { "name": "Peter Bartha", "email": "mail@peterbartha.com", "homepage": "https://peterbartha.com" }
+  ],
   "keywords": [
     "exec",
     "execcommand",
