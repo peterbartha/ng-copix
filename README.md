@@ -1,7 +1,7 @@
 ngCopix - Copy to clipboard using AngularJS (without flash)
 ======
 
-An AngularJS directive that uses **native execCommand** and updates the user's clipboard without any kind of Flash.
+An AngularJS directive that uses **native execCommand** and updates the user's clipboard without any kind of Flash. Only the latest browsers support [Selection API](https://developer.mozilla.org/en-US/docs/Web/API/Selection) and [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/ClipboardEvent).
 
 
 ## How to get it?
