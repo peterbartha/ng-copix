@@ -11,7 +11,7 @@ Download the compressed package from [here](https://github.com/peterbartha/ng-co
 
 #### Bower
 ```
-bower install ng-copix
+bower install ng-copix --save
 ```
 
 ## Support
